@@ -1,6 +1,6 @@
 {
   "name": "typestate",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "A small finite state machine implementation in TypeScript.",
   "repository": {
     "type": "git",
@@ -13,6 +13,7 @@
     "TypeScript"
   ],
   "main": "lib/index.js",
+  "browser": "dist/typestate.js",
   "author": "Erik Onarheim",
   "license": "BSD-2-Clause",
   "bugs": {
@@ -21,13 +22,20 @@
   "homepage": "https://github.com/eonarheim/TypeState",
   "devDependencies": {
     "jasmine": "^2.4.1",
-    "typescript": "^1.8.10",
     "grunt": "0.4.2",
     "grunt-shell": "0.6.1",
     "grunt-minified": "0.0.6",
     "grunt-contrib-concat": "0.1.2",
     "grunt-contrib-copy": "0.5.0",
-    "grunt-contrib-watch": "0.6.1"
+    "grunt-contrib-watch": "0.6.1",
+    "@babel/core": "^7.0.0-beta.39",
+    "babel-preset-env": "^2.0.0-alpha.20",
+    "rollup": "^0.55.3",
+    "rollup-plugin-babel": "^4.0.0-beta.0",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-typescript": "^0.8.1",
+    "typescript": "^2.7.1"
   },
   "types": "lib/index.d.ts"
 }
